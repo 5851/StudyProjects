@@ -12,6 +12,7 @@
 		0453EB7825171546009BE084 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453EB7725171546009BE084 /* DescriptionView.swift */; };
 		0453EB7A25171627009BE084 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453EB7925171627009BE084 /* SwiftUIWebView.swift */; };
 		0453EB7C251776B4009BE084 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453EB7B251776B4009BE084 /* AnimationView.swift */; };
+		047377C52517B4BE004652E3 /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047377C42517B4BE004652E3 /* CustomNavigation.swift */; };
 		04B9E82F25139E2000670872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E82E25139E2000670872 /* AppDelegate.swift */; };
 		04B9E83125139E2000670872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E83025139E2000670872 /* SceneDelegate.swift */; };
 		04B9E83525139E2400670872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B9E83425139E2400670872 /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		04B9E83B25139E2400670872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9E83925139E2400670872 /* LaunchScreen.storyboard */; };
 		04B9E8462513A23000670872 /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 04B9E8452513A23000670872 /* OpenAPIClient */; };
 		04B9E84B2514384600670872 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E84A2514384600670872 /* MainView.swift */; };
-		04B9E84F2514393A00670872 /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E84E2514393A00670872 /* CustomNavigation.swift */; };
 		04B9E8512514398C00670872 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E8502514398C00670872 /* NewsView.swift */; };
 		04B9E85525143DFD00670872 /* ShapeForButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E85425143DFD00670872 /* ShapeForButton.swift */; };
 		04B9E85725143FBF00670872 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9E85625143FBF00670872 /* NewsViewModel.swift */; };
@@ -37,6 +37,7 @@
 		0453EB7725171546009BE084 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		0453EB7925171627009BE084 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		0453EB7B251776B4009BE084 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		047377C42517B4BE004652E3 /* CustomNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
 		04B9E82B25139E2000670872 /* HomeWork2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B9E82E25139E2000670872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B9E83025139E2000670872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		04B9E83C25139E2400670872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B9E8432513A1FE00670872 /* api-mobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "api-mobile"; sourceTree = "<group>"; };
 		04B9E84A2514384600670872 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		04B9E84E2514393A00670872 /* CustomNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
 		04B9E8502514398C00670872 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		04B9E85425143DFD00670872 /* ShapeForButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeForButton.swift; sourceTree = "<group>"; };
 		04B9E85625143FBF00670872 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -77,6 +77,14 @@
 				0453EB752516EAEC009BE084 /* TopNewsViewModel.swift */,
 			);
 			path = TopNews;
+			sourceTree = "<group>";
+		};
+		047377C32517B4BE004652E3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				047377C42517B4BE004652E3 /* CustomNavigation.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		04B9E82225139E2000670872 = {
@@ -161,20 +169,11 @@
 		04B9E84C2514391900670872 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				047377C32517B4BE004652E3 /* Navigation */,
 				04B9E858251440CD00670872 /* Extensions */,
 				04B9E85325143DDF00670872 /* View */,
-				04B9E84D2514393A00670872 /* Navigation */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		04B9E84D2514393A00670872 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				04B9E84E2514393A00670872 /* CustomNavigation.swift */,
-			);
-			name = Navigation;
-			path = "../../../../../5-GeekUniversityMain/Вторая попытка/9.project/SwiftUI/StarWarsProject/StarWarsProject/Services/Navigation";
 			sourceTree = "<group>";
 		};
 		04B9E85225143DCD00670872 /* NewsView */ = {
@@ -285,9 +284,9 @@
 				0453EB7C251776B4009BE084 /* AnimationView.swift in Sources */,
 				0453EB7A25171627009BE084 /* SwiftUIWebView.swift in Sources */,
 				04B9E8632515034000670872 /* Spinner.swift in Sources */,
-				04B9E84F2514393A00670872 /* CustomNavigation.swift in Sources */,
 				04B9E85525143DFD00670872 /* ShapeForButton.swift in Sources */,
 				04B9E82F25139E2000670872 /* AppDelegate.swift in Sources */,
+				047377C52517B4BE004652E3 /* CustomNavigation.swift in Sources */,
 				04B9E84B2514384600670872 /* MainView.swift in Sources */,
 				04B9E85725143FBF00670872 /* NewsViewModel.swift in Sources */,
 				0453EB7825171546009BE084 /* DescriptionView.swift in Sources */,
