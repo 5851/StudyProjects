@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "rick-morty-swift-api",
+        "repositoryURL": "https://github.com/benjaminbruch/rick-morty-swift-api.git",
+        "state": {
+          "branch": "master",
+          "revision": "66f07d6e84b590f72e2b5e5284daf1a5d69b311d",
+          "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "665d02280f5c04515e76feb78078dd89da091f3e",
+          "version": "5.9.2"
+        }
+      },
+      {
+        "package": "SDWebImageSwiftUI",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+        "state": {
+          "branch": "master",
+          "revision": "0c23726533af59d9b42f757ba7c90a395ad39c55",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,3 +1,11 @@
+//
+//  Collection+Extensions.swift
+//  HomeWork3
+//
+//  Created by MAC on 01.10.2020.
+//  Copyright © 2020 MAC. All rights reserved.
+//
+
 import Foundation
 
 extension RandomAccessCollection where Self.Element: Identifiable {
