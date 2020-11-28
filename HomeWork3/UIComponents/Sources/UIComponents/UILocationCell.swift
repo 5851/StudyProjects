@@ -54,6 +54,11 @@ public struct UILocationCell: View {
             } // VStack
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(20)
+                .contextMenu {
+                    VStack {
+                        Text("111")
+                    }
+                }
         } // VStack
     } // Body
 }

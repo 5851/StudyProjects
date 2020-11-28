@@ -46,6 +46,9 @@ final class LocationsViewModel: ObservableObject {
                     self.state.canLoadNextPage = false
                 }
             case.failure(let error):
+                DispatchQueue.main.async {
+                    self.state.canLoadNextPage = false
+                }
                 print(error)
             }
         }
