@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04B5A5472571F73B0099D568 /* EpisodesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A5462571F73B0099D568 /* EpisodesDB.swift */; };
-		04B5A549257201920099D568 /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A548257201920099D568 /* CustomNavigation.swift */; };
 		04B5A54C25720AD20099D568 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A54B25720AD20099D568 /* StartView.swift */; };
 		04B9181025650FA900E401A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9180F25650FA900E401A4 /* AppDelegate.swift */; };
 		04B9181225650FA900E401A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9181125650FA900E401A4 /* SceneDelegate.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		04B5A5462571F73B0099D568 /* EpisodesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDB.swift; sourceTree = "<group>"; };
-		04B5A548257201920099D568 /* CustomNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomNavigation.swift; path = ../../../../HomeWork2/HomeWork2/Helpers/Navigation/CustomNavigation.swift; sourceTree = "<group>"; };
 		04B5A54B25720AD20099D568 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		04B9180C25650FA900E401A4 /* HomeWork7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B9180F25650FA900E401A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 		04B91826256515CD00E401A4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				04B5A548257201920099D568 /* CustomNavigation.swift */,
 				04B918382565187700E401A4 /* Collection+Extensions.swift */,
 				04B9183A2565188200E401A4 /* Date+Extensions.swift */,
 			);
@@ -436,7 +433,6 @@
 				04B918782565769F00E401A4 /* CharacterDB.swift in Sources */,
 				04B9181225650FA900E401A4 /* SceneDelegate.swift in Sources */,
 				04B9186F25656CB400E401A4 /* LocationRealmCell.swift in Sources */,
-				04B5A549257201920099D568 /* CustomNavigation.swift in Sources */,
 				04B9184B25651A0B00E401A4 /* CharactersView.swift in Sources */,
 				04B918402565196500E401A4 /* LocationsVieModel.swift in Sources */,
 				04B9185325651BDF00E401A4 /* EpisodeCell.swift in Sources */,
