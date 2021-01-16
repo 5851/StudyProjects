@@ -33,7 +33,7 @@ struct StartView: View {
         .onAppear {
             /// Чтобы при первом запуске сразу показало
             /// объекты сохраненные в первый раз
-            self.viewModel.fetchCharacters()
+//            self.viewModel.fetchCharacters()
         }
     }
 

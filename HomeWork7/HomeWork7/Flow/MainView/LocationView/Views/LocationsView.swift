@@ -18,7 +18,10 @@ struct LocationsView: View {
     var body: some View {
         List {
             ForEach(viewModel.locations, id: \.id) { location in
-                LocationCell(location: location)
+                NavigationLink(destination: LocationDetail(location: location)) {
+                    LocationCell(location: location)
+                }
+                .listRowBackground(Color.white)
             } // ForEach
         } // List
     } // Body

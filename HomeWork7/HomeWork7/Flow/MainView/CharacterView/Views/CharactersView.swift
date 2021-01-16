@@ -15,9 +15,12 @@ struct CharactersView: View {
 
     // MARK: - Body
     var body: some View {
-        List {
+        List() {
             ForEach(viewModel.characters, id: \.id) { character in
-                CharacterCell(character: character)
+                NavigationLink(destination: CharacterDetail(character: character)) {
+                    CharacterCell(character: character)
+                }
+                .listRowBackground(Color.white)
             } // ForEach
         } // List
     } // Body

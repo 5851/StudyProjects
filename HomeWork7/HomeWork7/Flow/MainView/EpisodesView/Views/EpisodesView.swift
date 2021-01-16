@@ -17,7 +17,10 @@ struct EpisodesView: View {
     var body: some View {
         List {
             ForEach(viewModel.episodes, id: \.id) { episode in
-                EpisodeCell(episode: episode)
+                NavigationLink(destination: EpisodeDetail(episode: episode)) {
+                    EpisodeCell(episode: episode)
+                }
+                .listRowBackground(Color.white)
             } // ForEach
         } // List
     } // Body

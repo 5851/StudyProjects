@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045AC8D125ABE13700C0AA98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AC8D025ABE13700C0AA98 /* ContentView.swift */; };
+		045C62DF2595754400C20442 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C62DE2595754400C20442 /* CharacterDetail.swift */; };
+		045C62E825958AB500C20442 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C62E725958AB500C20442 /* LocationDetail.swift */; };
+		045C62EB25958BB600C20442 /* EpisodesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C62EA25958BB600C20442 /* EpisodesDetail.swift */; };
 		04B5A5472571F73B0099D568 /* EpisodesDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A5462571F73B0099D568 /* EpisodesDB.swift */; };
 		04B5A54C25720AD20099D568 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A54B25720AD20099D568 /* StartView.swift */; };
 		04B9181025650FA900E401A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9180F25650FA900E401A4 /* AppDelegate.swift */; };
@@ -49,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045AC8D025ABE13700C0AA98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		045C62DE2595754400C20442 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
+		045C62E725958AB500C20442 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
+		045C62EA25958BB600C20442 /* EpisodesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDetail.swift; sourceTree = "<group>"; };
 		04B5A5462571F73B0099D568 /* EpisodesDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDB.swift; sourceTree = "<group>"; };
 		04B5A54B25720AD20099D568 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		04B9180C25650FA900E401A4 /* HomeWork7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork7.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				04B5A54B25720AD20099D568 /* StartView.swift */,
+				045AC8D025ABE13700C0AA98 /* ContentView.swift */,
 			);
 			path = StartView;
 			sourceTree = "<group>";
@@ -203,7 +212,6 @@
 		04B9183C2565193600E401A4 /* LocationView */ = {
 			isa = PBXGroup;
 			children = (
-				04B9183D2565194000E401A4 /* CharacterView */,
 				04B91845256519DF00E401A4 /* Views */,
 				04B9183F2565196500E401A4 /* LocationsVieModel.swift */,
 			);
@@ -233,6 +241,7 @@
 			children = (
 				04B91846256519F000E401A4 /* LocationsView.swift */,
 				04B9184E25651A3500E401A4 /* LocationCell.swift */,
+				045C62E725958AB500C20442 /* LocationDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 			children = (
 				04B9184A25651A0B00E401A4 /* CharactersView.swift */,
 				04B9185025651BD400E401A4 /* CharacterCell.swift */,
+				045C62DE2595754400C20442 /* CharacterDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +261,7 @@
 			children = (
 				04B9184C25651A1500E401A4 /* EpisodesView.swift */,
 				04B9185225651BDF00E401A4 /* EpisodeCell.swift */,
+				045C62EA25958BB600C20442 /* EpisodesDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				04B91827256515EB00E401A4 /* MainView.swift */,
+				04B9183D2565194000E401A4 /* CharacterView */,
 				04B9183C2565193600E401A4 /* LocationView */,
 				04B9183E2565195000E401A4 /* EpisodesView */,
 			);
@@ -355,7 +367,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = MAC;
 				TargetAttributes = {
 					04B9180B25650FA900E401A4 = {
@@ -410,6 +422,7 @@
 				04B91847256519F000E401A4 /* LocationsView.swift in Sources */,
 				04B918442565197800E401A4 /* EpisodesViewModel.swift in Sources */,
 				04B918302565179300E401A4 /* ServiceLocator.swift in Sources */,
+				045C62EB25958BB600C20442 /* EpisodesDetail.swift in Sources */,
 				04B9185B256555F300E401A4 /* MainTabView.swift in Sources */,
 				04B9183B2565188200E401A4 /* Date+Extensions.swift in Sources */,
 				04B9186A25656B9700E401A4 /* MainViewDB.swift in Sources */,
@@ -417,8 +430,11 @@
 				04B9185E25655C1A00E401A4 /* CustomTabs.swift in Sources */,
 				04B918332565181D00E401A4 /* LocationsFactory.swift in Sources */,
 				04B5A54C25720AD20099D568 /* StartView.swift in Sources */,
+				045AC8D125ABE13700C0AA98 /* ContentView.swift in Sources */,
+				045C62E825958AB500C20442 /* LocationDetail.swift in Sources */,
 				04B918352565182800E401A4 /* EpisodesFactory.swift in Sources */,
 				04B9187C256583B400E401A4 /* CharactersRealmView.swift in Sources */,
+				045C62DF2595754400C20442 /* CharacterDetail.swift in Sources */,
 				04B9181025650FA900E401A4 /* AppDelegate.swift in Sources */,
 				04B9187A2565831100E401A4 /* CharactersRealmViewModel.swift in Sources */,
 				04B9184D25651A1500E401A4 /* EpisodesView.swift in Sources */,
@@ -479,6 +495,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -539,6 +556,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

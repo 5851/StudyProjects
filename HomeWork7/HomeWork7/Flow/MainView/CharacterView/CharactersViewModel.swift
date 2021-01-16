@@ -13,13 +13,15 @@ import RealmSwift
 final class CharactersViewModel: ObservableObject {
 
     // MARK: - Properties
-    var characters: Results<CharacterDB>
+    var charactersRealm: Results<CharacterDB>
+    var characters: [CharacterDB] = []
     let serviceLocator: ServiceLocator
 
     // MARK: - Init
     init(serviceLocator: ServiceLocator, realm: Realm) {
-        characters = realm.objects(CharacterDB.self)
+        charactersRealm = realm.objects(CharacterDB.self)
         self.serviceLocator = serviceLocator
+        self.fetchCharacters()
     }
 
     // MARK: - NetworkFunctions
@@ -32,6 +34,7 @@ final class CharactersViewModel: ObservableObject {
             case.success(let characters):
                 DispatchQueue.main.async {
                     let charactersDB = characters.map { CharacterDB.init($0) }
+                    self.characters = charactersDB
                     realmService.saveCharacters(items: charactersDB)
                 }
             case.failure(let error):
