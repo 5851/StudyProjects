@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yzE-nM-ybC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eKu-gU-ujs">
+            <objects>
+                <tabBarController id="yzE-nM-ybC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tgu-gU-U87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RKD-H7-M3e" kind="relationship" relationship="viewControllers" id="fhc-cX-n82"/>
+                        <segue destination="JRu-pg-YDa" kind="relationship" relationship="viewControllers" id="RDt-hJ-DrC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9l-5l-zje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841" y="36"/>
+        </scene>
+        <!--SuffixArray-->
+        <scene sceneID="F8Z-21-phj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SuffixArray" id="JRu-pg-YDa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Suffix" id="kAr-5S-zJM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1w-Mw-Juw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="-163"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="krY-qN-1Aa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feed" id="RKD-H7-M3e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="UGJ-gX-T0i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORr-9b-hy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="198"/>
+        </scene>
+    </scenes>
+</document>

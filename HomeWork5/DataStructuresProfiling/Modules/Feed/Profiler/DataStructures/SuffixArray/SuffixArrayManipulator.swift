@@ -3,7 +3,7 @@
 //  DataStructuresProfiling
 //
 //  Created by MAC on 28.11.2020.
-//  Copyright © 2020 Exey Panteleev. All rights reserved.
+//  Copyright © 2021 Максим Елисеев. All rights reserved.
 //
 
 import Foundation
@@ -18,10 +18,12 @@ struct SuffixSequence: Sequence {
 struct SuffixIterator: IteratorProtocol {
     let string: String
     var offset: String.Index
+
     init(string: String) {
         self.string = string
         offset = string.endIndex
     }
+
     mutating func next() -> Substring? {
         guard offset > string.startIndex else { return nil }
         offset = string.index(before: offset)

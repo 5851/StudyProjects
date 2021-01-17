@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A54AA125B3C1ED005E1682 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04A54AA025B3C1ED005E1682 /* SnapKit */; };
+		04A54B0E25B3C876005E1682 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A54B0D25B3C876005E1682 /* MainTabBar.storyboard */; };
+		04A54B1625B3CA45005E1682 /* SuffixArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A54B1525B3CA45005E1682 /* SuffixArray.storyboard */; };
+		04A54B1D25B3CB3E005E1682 /* SuffixListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A54B1C25B3CB3E005E1682 /* SuffixListController.swift */; };
+		04A54B2125B3D24F005E1682 /* SuffixService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A54B2025B3D24F005E1682 /* SuffixService.swift */; };
+		04A54B2425B3D53C005E1682 /* SuffixStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A54B2325B3D53C005E1682 /* SuffixStruct.swift */; };
 		04B5A55B257284A60099D568 /* SuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A55A257284A60099D568 /* SuffixArrayManipulator.swift */; };
 		04B5A55D257284C40099D568 /* SwiftSuffixArrayManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A55C257284C40099D568 /* SwiftSuffixArrayManipulator.swift */; };
 		04B5A55F257284FD0099D568 /* SuffixArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5A55E257284FD0099D568 /* SuffixArrayViewController.swift */; };
@@ -37,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A54B0D25B3C876005E1682 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		04A54B1525B3CA45005E1682 /* SuffixArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuffixArray.storyboard; sourceTree = "<group>"; };
+		04A54B1C25B3CB3E005E1682 /* SuffixListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixListController.swift; sourceTree = "<group>"; };
+		04A54B2025B3D24F005E1682 /* SuffixService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixService.swift; sourceTree = "<group>"; };
+		04A54B2325B3D53C005E1682 /* SuffixStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixStruct.swift; sourceTree = "<group>"; };
 		04B5A55A257284A60099D568 /* SuffixArrayManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayManipulator.swift; sourceTree = "<group>"; };
 		04B5A55C257284C40099D568 /* SwiftSuffixArrayManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSuffixArrayManipulator.swift; sourceTree = "<group>"; };
 		04B5A55E257284FD0099D568 /* SuffixArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixArrayViewController.swift; sourceTree = "<group>"; };
@@ -73,12 +84,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A54AA125B3C1ED005E1682 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A54B1925B3CB0B005E1682 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F719AE2C22C5490B009D08D3 /* FeedThirdViewController.swift */,
+				F719AE2D22C5490B009D08D3 /* SessionSummaryViewController.swift */,
+				F719AE2E22C5490B009D08D3 /* FeedViewController.swift */,
+				F719AE2F22C5490B009D08D3 /* FeedTableViewCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		04A54B1A25B3CB18005E1682 /* SuffixArray */ = {
+			isa = PBXGroup;
+			children = (
+				04A54B1C25B3CB3E005E1682 /* SuffixListController.swift */,
+			);
+			path = SuffixArray;
+			sourceTree = "<group>";
+		};
 		04B5A5592572847D0099D568 /* SuffixArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +138,8 @@
 		F719ADFE22C54873009D08D3 /* DataStructuresProfiling */ = {
 			isa = PBXGroup;
 			children = (
-				F719AE4B22C54935009D08D3 /* Services */,
 				F719AE1122C54891009D08D3 /* Modules */,
+				F719AE4B22C54935009D08D3 /* Services */,
 				F719ADFF22C54873009D08D3 /* AppDelegate.swift */,
 				F719AE0622C54877009D08D3 /* Assets.xcassets */,
 				F719AE0B22C54877009D08D3 /* Info.plist */,
@@ -130,6 +161,7 @@
 				F719AE2B22C5490B009D08D3 /* Controllers */,
 				F719AE2822C5490B009D08D3 /* Models */,
 				F719AE3022C5490B009D08D3 /* Views */,
+				F719AE3722C5490B009D08D3 /* DataStructures */,
 				F719AE1322C548C9009D08D3 /* Profiler */,
 			);
 			path = Feed;
@@ -188,6 +220,7 @@
 			children = (
 				F719AE2922C5490B009D08D3 /* FeedDataProvider.swift */,
 				F719AE2A22C5490B009D08D3 /* FeedData.swift */,
+				04A54B2325B3D53C005E1682 /* SuffixStruct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,10 +228,8 @@
 		F719AE2B22C5490B009D08D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F719AE2C22C5490B009D08D3 /* FeedThirdViewController.swift */,
-				F719AE2D22C5490B009D08D3 /* SessionSummaryViewController.swift */,
-				F719AE2E22C5490B009D08D3 /* FeedViewController.swift */,
-				F719AE2F22C5490B009D08D3 /* FeedTableViewCell.swift */,
+				04A54B1A25B3CB18005E1682 /* SuffixArray */,
+				04A54B1925B3CB0B005E1682 /* Feed */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,9 +237,10 @@
 		F719AE3022C5490B009D08D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04A54B0D25B3C876005E1682 /* MainTabBar.storyboard */,
 				F719AE3D22C5490B009D08D3 /* DataStructures.storyboard */,
 				F719AE3522C5490B009D08D3 /* Feed.storyboard */,
-				F719AE3722C5490B009D08D3 /* DataStructures */,
+				04A54B1525B3CA45005E1682 /* SuffixArray.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +250,9 @@
 			children = (
 				F719AE3822C5490B009D08D3 /* ArrayViewController.swift */,
 				F719AE3922C5490B009D08D3 /* DictionaryViewController.swift */,
+				04B5A55E257284FD0099D568 /* SuffixArrayViewController.swift */,
 				F719AE3A22C5490B009D08D3 /* SetViewController.swift */,
 				F719AE3B22C5490B009D08D3 /* DataStructuresViewController.swift */,
-				04B5A55E257284FD0099D568 /* SuffixArrayViewController.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -230,6 +262,7 @@
 			children = (
 				F719AE4C22C54944009D08D3 /* AlgoProvider.swift */,
 				F719AE4D22C54944009D08D3 /* Services.swift */,
+				04A54B2025B3D24F005E1682 /* SuffixService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +283,9 @@
 			dependencies = (
 			);
 			name = DataStructuresProfiling;
+			packageProductDependencies = (
+				04A54AA025B3C1ED005E1682 /* SnapKit */,
+			);
 			productName = DataStructuresProfiling;
 			productReference = F719ADFC22C54873009D08D3 /* DataStructuresProfiling.app */;
 			productType = "com.apple.product-type.application";
@@ -261,7 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Exey Panteleev";
 				TargetAttributes = {
 					F719ADFB22C54873009D08D3 = {
@@ -278,6 +314,9 @@
 				Base,
 			);
 			mainGroup = F719ADF322C54872009D08D3;
+			packageReferences = (
+				04A54A9F25B3C1ED005E1682 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F719ADFD22C54873009D08D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F719AE4422C5490B009D08D3 /* Feed.storyboard in Resources */,
+				04A54B1625B3CA45005E1682 /* SuffixArray.storyboard in Resources */,
+				04A54B0E25B3C876005E1682 /* MainTabBar.storyboard in Resources */,
 				F719AE4A22C5490B009D08D3 /* DataStructures.storyboard in Resources */,
 				F719AE0722C54877009D08D3 /* Assets.xcassets in Resources */,
 			);
@@ -311,6 +352,7 @@
 				F719AE3E22C5490B009D08D3 /* FeedDataProvider.swift in Sources */,
 				F719AE4522C5490B009D08D3 /* ArrayViewController.swift in Sources */,
 				F719AE2322C548CA009D08D3 /* SwiftDictionaryManipulator.swift in Sources */,
+				04A54B1D25B3CB3E005E1682 /* SuffixListController.swift in Sources */,
 				F719AE4622C5490B009D08D3 /* DictionaryViewController.swift in Sources */,
 				F719AE2522C548CA009D08D3 /* SwiftSetManipulator.swift in Sources */,
 				F719AE4322C5490B009D08D3 /* FeedTableViewCell.swift in Sources */,
@@ -318,6 +360,7 @@
 				F719AE4F22C54945009D08D3 /* Services.swift in Sources */,
 				F719AE2222C548CA009D08D3 /* StringGenerator.swift in Sources */,
 				F719AE4222C5490B009D08D3 /* FeedViewController.swift in Sources */,
+				04A54B2425B3D53C005E1682 /* SuffixStruct.swift in Sources */,
 				F719AE2722C548CA009D08D3 /* Profiler.swift in Sources */,
 				F719AE2022C548CA009D08D3 /* ArrayManipulator.swift in Sources */,
 				F719AE2422C548CA009D08D3 /* DictionaryManipulator.swift in Sources */,
@@ -326,6 +369,7 @@
 				F719AE2122C548CA009D08D3 /* SwiftArrayManipulator.swift in Sources */,
 				04B5A55D257284C40099D568 /* SwiftSuffixArrayManipulator.swift in Sources */,
 				F719AE4022C5490B009D08D3 /* FeedThirdViewController.swift in Sources */,
+				04A54B2125B3D24F005E1682 /* SuffixService.swift in Sources */,
 				04B5A55F257284FD0099D568 /* SuffixArrayViewController.swift in Sources */,
 				F719AE0022C54873009D08D3 /* AppDelegate.swift in Sources */,
 				F719AE4E22C54945009D08D3 /* AlgoProvider.swift in Sources */,
@@ -372,6 +416,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -397,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,6 +478,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -452,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -466,8 +512,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4GES9GRUE;
+				DEVELOPMENT_TEAM = F9K6TF7ASC;
 				INFOPLIST_FILE = DataStructuresProfiling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exey.DataStructuresProfiling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,8 +532,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4GES9GRUE;
+				DEVELOPMENT_TEAM = F9K6TF7ASC;
 				INFOPLIST_FILE = DataStructuresProfiling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = exey.DataStructuresProfiling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -520,6 +570,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04A54A9F25B3C1ED005E1682 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04A54AA025B3C1ED005E1682 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04A54A9F25B3C1ED005E1682 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F719ADF422C54873009D08D3 /* Project object */;
 }
